@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  font-size: 15px;
+  color: #e6e6e6;
+}
+* h1 {
+  font-size: 2rem;
+}
+* h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+* h3 {
+  font-size: 1.5rem;
+}
+*.nonpadding {
+  padding: 0 !important;
+}
+body {
+  background-image: url("./images/tlo3.jpg");
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+}
+body li {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+body ul.disc {
+  list-style-type: square;
+}
+body ul.circle {
+  list-style-type: circle;
+}
+body #container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 50px 0px;
+}
+body #container #top_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container #top_bar #logo {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+body #container #top_bar #logo #logo_image {
+  max-width: 350px;
+  min-width: 200px;
+}
+body #container #top_bar #menu nav ul li {
+  padding: 15px;
+  list-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease all;
+}
+body #container #top_bar #menu nav ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+body #container #top_bar #menu nav ul li:hover {
+  cursor: pointer;
+  background-color: rgba(0,40,60,0.2);
+  transition: 0.3s ease all;
+}
+body #container #slider {
+  margin: 50px -45px 50px -45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body #container #slider ul li {
+  list-decoration: none;
+  display: inline;
+  padding: 5px;
+}
+body #container #slider .prev,
+body #container #slider .next {
+  color: rgba(250,250,250,0.1);
+  font-size: 2rem;
+  padding: 10px;
+}
+body #container #slider .prev:hover,
+body #container #slider .next:hover {
+  cursor: pointer;
+  color: rgba(250,250,250,0.7);
+}
+body #container #slider .slidesjs-stop,
+body #container #slider .slidesjs-play {
+  display: none !important;
+}
+body #container section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-family: 'Lato';
+}
+body #container section #map {
+  height: 500px;
+  margin-top: 50px;
+  background-color: rgba(190,190,190,0.3);
+}
+body #container section #section {
+  padding: 40px 60px;
+  flex: 0.48;
+  background-color: rgba(0,40,60,0.75);
+}
+body #container section #section.full {
+  margin-top: 50px;
+  flex: 1;
+}
+body #container section #section.list {
+  padding: 30px 40px 40px;
+}
+body #container section #section header #header {
+  line-height: 2.5rem;
+}
+body #container section #section header #header h2 {
+  color: #96c8c8;
+}
+body #container section #section article #article {
+  padding: 30px 0 0;
+}
+body #container section #section article #article i {
+  font-size: 1rem;
+  color: rgba(250,250,250,0.7);
+}
+body #container section #section article #article a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: italic;
+  border: none !important;
+  color: #fadcdc;
+  object-fit: cover;
+}
+body #container section #section article #article a:hover {
+  color: #e6fafa;
+  border-bottom: 1px solid rgba(250,250,250,0.3);
+}
+body #container section #section article #article a img {
+  width: 19%;
+  margin: 0.5%;
+  opacity: 1;
+}
+body #container section #section article #article a img:hover {
+  opacity: 0.8;
+}
+body #container section #section article #article .contact {
+  justify-content: flex-end;
+  margin-right: 20px;
+  background-color: rgba(250,150,150,0.1);
+  padding: 20px 30px;
+}
+body #container section #section article #article .contact .row {
+  display: flex;
+  flex: 1;
+  padding: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container section #section article #article .contact .row .info {
+  font-size: 1.3rem;
+  text-align: left;
+  flex: 1;
+  color: #e6f0f0;
+  line-height: 1.4rem;
+}
+body #container section #section article #article .contact .row i {
+  padding: 0px 20px 0px 0px;
+  width: 30px;
+  font-size: 1.6rem;
+  color: rgba(200,200,200,0.7);
+  text-align: center;
+}
+body #container section #section article #article.adress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #container section #section article #article p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+body #container section #section article #article > ul > li {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #dcbec8;
+}
+body #container section #section article #article.offer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+}
+body #container section #section article #article.offer .info-box {
+  padding: 35px;
+  background-color: rgba(250,250,250,0.15);
+  width: 41%;
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+body #container section #section article #article.offer .info-box.padding {
+  width: 40%;
+  padding-left: 50px;
+}
+body #container section #section article #article.offer .info-box p {
+  text-align: center;
+  line-height: 1.15em;
+  margin-bottom: 20px;
+  color: #d2d2d2;
+}
+body #container section #section article #article.offer .info-box p.solid {
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+body #container section #section article #article.offer .info-box .header {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+body #container section #section article #article.offer .info-box .header.margin {
+  margin-top: 30px;
+}
+body #container section #section article #article.offer .info-box ul li {
+  list-style-type: circle;
+  color: rgba(250,250,250,0.9);
+  letter-spacing: 1px;
+  line-height: 1.2em;
+}
+body #container section #section article #article.offer .info-box ul li ul li {
+  list-style-type: disc;
+}
+body #container section #section article #article.offer .info-box i {
+  font-size: 1.4rem;
+  color: #fff;
+}
+body #container section #section article #article.offer .info-box.right .thumbnail {
+  float: right;
+  margin: 0px 0px 5px 20px;
+}
+body #container section #section article #article.offer .info-box .thumbnail {
+  float: left;
+  margin: 0px 20px 5px 0px;
+}
+body #container section #section article #article.offer .info-box .thumbnail img {
+  width: 180px;
+  height: 150px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+body #container section #section article #article.offer .info-box .text .desc {
+  text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+}
+body #container section #section article #article.offer .info-box .text .title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #dcc8c8;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+body #container footer #footer {
+  font-size: 1.3rem;
+  background-color: rgba(30,40,60,0.5);
+  padding: 20px 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+body #container footer #footer .left a {
+  opacity: 0.8;
+}
+body #container footer #footer .left a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+body #container footer #footer .contact {
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+body #container footer #footer .contact .row {
+  display: flex;
+  flex: 1;
+  padding: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container footer #footer .contact .row .info {
+  font-size: 1.3rem;
+  text-align: left;
+  flex: 1;
+  color: #e6f0f0;
+  line-height: 1.4rem;
+}
+body #container footer #footer .contact .row i {
+  padding: 0px 20px 0px 0px;
+  width: 30px;
+  font-size: 1.6rem;
+  color: rgba(200,200,200,0.7);
+  text-align: center;
+}

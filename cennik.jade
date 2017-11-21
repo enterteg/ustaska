@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html
+  head
+    include templates/head
+  body
+    #container
+      include templates/nav
+      section
+        #section.full
+          header
+            #header
+              h2 Cennik
+          article
+            #article.offer
+              .info-box.padding
+                .header 
+                  | Cena za nocleg z wyżywieniem 
+                  br
+                  | (śniadanie + obiadokolacja) wynosi:
+                ul
+                  li w miesiącach kwiecień - październik
+                    ul
+                      li
+                        i 45 zł / osobę
+                  li w pozostałych miesiącach:
+                    ul
+                      li 
+                        i 50 zł / osobę
+                .header.margin
+                  |  Sylwester
+                ul
+                  li Koszt trzydniowego pobytu wraz z całodniowym wyżywieniem
+                    | oraz imprezą sylwestrową wynosi 
+                    b jedyne 380zł od osoby.
+                      
+                .header.margin
+                  | Dostępne są pokoje:
+                ul
+                  li 2, 3, 4, 5, 6 osobowe
+              .info-box.padding
+                p Marzysz o odprężeniu przy grilu w góralskim klimacie?
+                p.solid 
+                  | Wszystko to możesz mieć całkiem
+                  br
+                  | ZA DARMO!
+                p 
+                  | Przyjedź do nas ze znajomymi, a za każdą osobę którą weźmiesz ze sobą dostaniesz 5% rabatu!
+                p Mało?
+                p.solid
+                  | Rachunek jest prosty - organizujesz grupę 18 znajomych a Ty za pobyt nie płacisz ani grosza!
+                  | Sumowanie nie ma ograniczeń! 
+                p 
+                  | Jeśli zorganizujesz grupę 40 osobową to Ty i bliska Ci osoba spędzicie ten czas zupełnie za darmo.
+                p Promocja obowiązuje od 01.04.16r. do 01.10.16r.
+                p.solid
+                  | Wszystko w Twoich rękach. Do dzieła!
+                  | Serdecznie zapraszamy!
+              
+      include templates/footer
+      script(src='./js/maps.js')
+      script(async, defer,  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XOOFXrIs6C_wz5-3-rLQu6v6V9GKkYM&callback=initMap")

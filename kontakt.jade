@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html
+  head
+    include templates/head
+  body
+    #container
+      include templates/nav
+      section
+        #section.full
+          header
+            #header
+             h2 Kontakt
+          article
+            #article.adress
+              p.adress
+                | Młynne 127A
+                br
+                | 34-452 Ochotnica Dolna
+                br
+                | woj. małopolskie
+              .contact
+                .row
+                  i.fa.fa-envelope
+                  .info ustaska@wp.pl
+                .row 
+                  i.fa.fa-phone
+                  .info (18) 262-49-11
+                .row
+                  i.fa.fa-mobile
+                  .info 881-278-461
+          #map
+      include templates/footer
+      script(src='./js/maps.js')
+      script(async, defer,  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XOOFXrIs6C_wz5-3-rLQu6v6V9GKkYM&callback=initMap")

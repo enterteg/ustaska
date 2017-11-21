@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html
+  head
+    include templates/head
+    link(href="./js/lightbox/css/lightbox.css", rel="stylesheet")
+  body
+    #container
+      include templates/nav
+      section
+        #section.full
+          header
+            #header
+             h2 Galeria
+          article
+            #article
+              - for (var x = 51; x > 0; x--)
+                a(href="./images/galeria/zdjecie"+x+".jpg", data-lightbox="images")
+                  img(src="./images/galeria/miniaturki/mianiaturka"+x+".jpg")
+      include templates/footer
+      script(src="http://code.jquery.com/jquery-latest.min.js")
+      script(src="./js/lightbox/js/lightbox.js")

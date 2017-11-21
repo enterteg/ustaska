@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+html
+  head
+    include templates/head
+  body
+    #container
+      include templates/nav
+      #slider
+        .prev.slidesjs-previous.slidesjs-navigation
+          i.fa.fa-chevron-left
+        img(src="./images/house.jpg")
+        img(src="./images/rooms.jpg")
+        img(src="./images/winter2.jpg")
+        img(src="./images/landscape.jpg")
+        .next.slidesjs-next.slidesjs-navigation
+          i.fa.fa-chevron-right
+      section
+        #section
+          header
+            #header
+              h2 
+                | Pokoje gościnne w oazie ciszy 
+                br
+                | i spokoju
+          article
+            #article
+              p
+                | Dom położony jest na uboczu malowniczej miejscowości,
+                | w ofercie dla gości pokoje 2, 3 oraz 4 osobowe, stołówka 
+                | z możliwością całodniowego wyżywienia w atrakcyjnych cenach oraz sala ze stołem do ping-ponga, boisko do siatkówki i mini basketu.
+                br
+                br
+                | Obok obiektu bezpieczny parking.
+                | Idealne miejsce dla grup, kolonii oraz na wczasy rodzinne.
+                | Zarówno zimą jak i latem Ochotnica czeka na turystów.
+        #section
+          header
+            #header.right
+              h2 
+                | Odpręż się i zrelaksuj
+          article
+            #article
+              p
+                | Najwyższa pora, aby zacząć planować rodzinną majówkę, 
+                | lub wypad w góry ze znajomymi. Ochotnica i jej nowe wieże widokowe 
+                | połączone kilometrami ścieżek rowerowych to miejsce wręcz
+                | wymarzone do wypoczynku. 
+                br
+                br
+                | Cisza, piękno przyrody, 
+                | smaczne domowe posiłki - czego chcieć więcej?
+                br
+                br
+                | Zapraszamy do zapoznania sie z atrakcjami turystycznymi Ochotnicy:
+                br
+                br
+                i.fa.fa-link
+                a(href="http://www.ochotnica.pl/pl/544/0/enklawa-aktywnego-wypoczynku.html") 
+                  | Ochotnica - enklawa aktywnego wypoczynku
+      section
+        #section.list
+          article
+            #article.nonpadding
+              ul.disc
+                li Do dyspozycji gości:
+                  ul.circle
+                    li Kuchnia ogólnodostępna
+                    li Miejsce na ognisko
+                    li Wypożyczalnia sprzętu rekreacyjnego
+                    li Boisko do gry
+                    li Sala telewizyjna / gier / świetlica
+                    li Wypożyczalnia sprzętu wodnego
+                    li Grill, Sala kominkowa
+                li Udogodnienia:
+                  ul.circle
+                    li Możliwość zlecenia prania
+                    li Możliwość zlecenia prasowania
+                    li Pralka ogólnodostępna
+                    li Deska do prasowania / żelazko ogólnodostępne
+                li Akceputjemy zwierzaki
+              
+        #section.list
+          article
+            #article.nonpadding
+              ul.disc
+                li Atrakcje dla dzieci:
+                  ul.circle
+                    li 
+                      | Plac zabaw dla dzieci 
+                      br
+                      | (Piaskownica, Huśtawka, Trampolina)
+                    li Sala zabaw dla dzieci
+                li Dla biznesu:
+                  ul.circle
+                    li Kącik biznesowy (internet ksero/fax)
+                    li Internet (wifi)
+                li Opcje wyżywienia
+                  ul.circle
+                    li Śniadanie
+                    li Obiad
+                    li Kolacja
+                    li Obiadokolacja
+                    li Podwieczorek
+
+      include templates/footer
+      script(src="http://code.jquery.com/jquery-latest.min.js")
+      script(src="./js/jquery.slides.min.js")
+      script(src="./js/main.js")

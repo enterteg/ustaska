@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+html
+  head
+    include templates/head
+  body
+    #container
+      include templates/nav
+      section
+        #section.full
+          header
+            #header
+             h2 Nasza oferta
+          article
+            #article.offer
+              .info-box
+                .thumbnail 
+                  img(src="./images/ferie2.jpg")
+                .text
+                  .title Ferie Zimowe
+                  .desc 
+                    | Podczas ferii zimowych oferujemy niezapomniane przejażdzki 
+                    | kuligiem, grille, ogniska oraz domową atmosferę.
+                    br
+                    br
+                    | Możliwość wyjazdu na stok narciarski oddalony o 20 km od pensjonatu,
+                    | miejsce do jazdy na sankach i innych.
+                    br
+                    br
+                    | Oraz oczywiście niesamowite zimowe krajobrazy.
+                    br
+                    br
+                    b Serdecznie zapraszamy!
+              .info-box.right
+                .thumbnail 
+                  img(src="./images/aktywnie.jpg")
+                .text
+                  .title Dla aktywnych
+                  .desc
+                    | Zapraszamy do zmierzenia się z kilometrami  nowych ścieżek
+                    | rowerowych oraz tras pieszych powstałych  na terenie  
+                    | Gminy Ochotnica.
+                    br
+                    br
+                    | Możliwość podziwiania widoków z nowo powstałych wież
+                    | widokowych na okolicznych szczytach. Nidealeko od naszego pensjonatu odbywa się spływ  Dunajcem (ok. 20km).
+                    br
+                    br
+                    | Obok ośrodka znajduje się trampolina, boisko do siatkówki,
+                    | badmintona oraz mini koszykówki. Wewnątrz natomiast
+                    | można grać w bilard, tenis stołowy czy też piłkarzyki.
+                    br
+                    br
+                    b Serdecznie zachęcamy do aktywnego spędzenia czasu w Gorcach!
+              .info-box
+                .thumbnail 
+                  img(src="./images/dzieci.jpg")
+                .text
+                  .title Zielone szkoły, kolonie, obozy
+                  .desc 
+                    | Oferujemy zniżki  dla większych grup, 
+                    | obiekt mieści spokojnie  50 osób, stołówka także
+                    | przystosowana jest do większej ilości ludzi.
+                    br
+                    br
+                    | W obiekcie znajduje się sala rekreacyjna, sala z tv, 
+                    | kominkiem, sala dyskotekowa, obok pensjonatu znajduje się
+                    | także boisko do gry oraz plac zabaw dla dzieci (huśtawka , paskownica,  trampolina).
+                    br
+                    | W obiekcie znajdują się piłkarzyki, bilard oraz  stół  do tenisa.
+                    br
+                    br
+                    b Serdecznie zapraszamy na te oraz więcej atrakcji.
+              .info-box.right
+                .thumbnail 
+                  img(src="./images/ognisko.jpg")
+                .text
+                  .title Długi weekend majowy
+                  .desc 
+                    | Serdecznie zapraszamy aby aktywnie spędzić czas, lub po prostu wyluzować się i odpocząć.
+                    br
+                    br
+                    | Wieczorami możliwość  zorganizowania  dyskoteki lub  kapeli góralskiej, 
+                    | grila, ogniska, pieczenia prosiaka  czy też  barana.
+                    br
+                    br
+                    b Przyjedź i przekonaj się sam, że warto!
+              .info-box
+                .thumbnail 
+                  img(src="./images/sylwester.jpg")
+                .text
+                  .title Sylwester w Gorcach
+                  .desc 
+                    | Serdecznie zapraszamy na Sylwestra w Gorcach, 
+                    | trzydniowy pobyt wraz
+                    | z niezapomnianą imprezą sylwestrową!
+                    br
+                    br
+                    | Wspaniałe zimowe widoki oraz niesamowita świąteczna atmosfera!
+                    | Dodatkowe atrakcje  które  oferujemy: kulig, kapela góralska, 
+                    | pieczenie  barana lub prosiaka.
+                    br
+                    br
+                    b Gwarancja udanej zabawy!
+              .info-box.right
+                .thumbnail 
+                  img(src="./images/grupa.jpg")
+                .text
+                  .title Dla grup zorganizowanych
+                  .desc 
+                    | Oferujemy zniżki  dla większych grup, 
+                    | obiekt mieści spokojnie  50 osób, stołówka także
+                    | przystosowana jest do większej ilości ludzi.
+                    br
+                    br
+                    | Idelanym sposobem spędzania czasu w grupie jest zdobywanie okolicznych szczytów,
+                    | do czego serdecznie Państwa zachęcamy.
+                    br
+                    br
+                    |Ofreujemy o wiele więcej form rozrywki o których można poczytać w innych zakładkach.
+                    br
+                    br
+                    b Serdecznie zapraszamy na te oraz więcej atrakcji.
+              
+      include templates/footer
+      script(src='./js/maps.js')
+      script(async, defer,  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XOOFXrIs6C_wz5-3-rLQu6v6V9GKkYM&callback=initMap")
